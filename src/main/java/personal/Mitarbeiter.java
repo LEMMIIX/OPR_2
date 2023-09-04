@@ -51,7 +51,7 @@ public class Mitarbeiter {
         return this.name;
     }
 
-    private int gibLimit() {
+    public int gibLimit() {
         return this.allgLimit;
     }
 

@@ -11,4 +11,11 @@ public class Vorgesetzter extends Mitarbeiter{
     public void setzeBestelllimit(int limit) {
         this.bestLimit = limit;
     }
+
+    @Override
+    public int gibLimit() {
+        return this.bestLimit == 0
+                ? allgLimit
+                : bestLimit;
+    }
 }
